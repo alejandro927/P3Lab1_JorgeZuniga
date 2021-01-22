@@ -5,9 +5,9 @@ using namespace std;
 
 int main(int argc, char** argv) {
 	int opcion;
-	int respuesta;
-	respuesta==1;
-	while(respuesta=1){
+	bool respuesta;
+	respuesta=true;
+	while(respuesta==true){
 		
 		cout<<"\nLas opciones son:\n";
 		cout<<"1)Ejercicio1\n";
@@ -37,14 +37,19 @@ int main(int argc, char** argv) {
 		}
 		break;
 		case 2:{
-			cout<<"\n2)Ejercicio2\n";
-			
+			cout<<"\nIngrese el numero para la funcion:";
+			int x=0;
+			cin>>x;
+			double division,expo;
+			expo=1+exp(x);
+			division=1/expo;
+			cout<<"La respuesta es:"<<division;
+			cout<<"\n";
 		}
 		break;
 		case 3:
-			cout<<"\nAdios!!";
-			cin>>respuesta;
-			respuesta==2;
+			cout<<"\nAdios!!...";
+			respuesta=false;
 		
 		break;
 		}
